@@ -1,0 +1,16 @@
+1)Why was this model chosen?
+
+Answer:
+XGBoost was chosen because it achieved better accuracy and overall performance compared to other models and works efficiently with structured data containing both numerical and categorical features. It is also robust to overfitting and provides reliable predictions.
+
+
+2)How do features impact the prediction?
+
+Answer:
+The model uses features such as academic pressure, work pressure, sleep duration, CGPA, study satisfaction, suicidal thoughts, financial stress, and family history to predict depression. Higher stress levels, poor sleep, low satisfaction, and suicidal thoughts increase the likelihood of depression, while better academic performance and satisfaction reduce the risk.
+
+
+3)What improvements can be done in the future?
+
+Answer:
+The model can be improved by using more data, adding new features related to lifestyle and behavior, and making the system handle new or unknown input values properly. The accuracy can also be increased by improving data balance and updating the model regularly.

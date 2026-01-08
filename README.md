@@ -1,12 +1,15 @@
 # student_prediction_project-
 
 **Project Overview
+
 This project is a Machine Learning-based system to predict the likelihood of depression in students. It uses structured student data, including academic, lifestyle, and psychological features, to provide predictions. The goal is to identify students at risk early so that preventive measures or interventions can be taken.
 
 The model is trained using XGBoost, and the application is deployed as a Flask API.
 
 **Features Used
+
 The model uses the following features:
+
 Gender
 Age
 City

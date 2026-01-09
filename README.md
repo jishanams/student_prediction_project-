@@ -49,28 +49,36 @@ Use explainable AI methods.
 Deploy on cloud for real-world use.
 
 ##setup instructions
-****Clone the repository:
-
-git clone <your-repo-url>
+ 
+Step 1: Open Project Folder
+Open Command Prompt / Terminal and go to the project directory.
 cd student_depression_project
 
-****Install required packages:
+Step 2: Install Required Packages
+Install Flask and other required libraries.
+pip install flask numpy scikit-learn xgboost
 
-pip install -r requirements.txt
-
-
-****Run the Flask API:
-
+Step 3: Run the Flask Application
+Start the API server by running:
 python app.py
 
 
-****Test the API using Postman at:
+If successful, you will see:
+Running on http://127.0.0.1:5000
+This means the Flask server is running.
 
-POST http://127.0.0.1:5000/predict
+Step 4: Open Postman
+Open Postman application.
 
+Step 5: Create a New Request in Postman
+Select POST method
+Enter URL:
+http://127.0.0.1:5000/predict
 
-****Use JSON input with the student features.
-** JSON Input
+Step 6: Add Request Body
+Go to Body → raw → JSON
+Paste input data:
+
 {
   "gender": "Male",
   "age": 21,
@@ -90,12 +98,19 @@ POST http://127.0.0.1:5000/predict
   "family_history": "No"
 }
 
-Output
+Step 7: Send Request
+Click Send.
+
+Step 8: View Prediction
+Postman will return the prediction result in JSON format:
+
 {
   "prediction": 1,
   "result": "Likely Depressed"
 }
 
+Step 9: Stop the Server
+Press CTRL + C in the terminal to stop Flask.
 
 0 → Not Likely Depressed
 
